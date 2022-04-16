@@ -1,0 +1,100 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    font-family: 'NanumSquare';
+}
+
+a {
+	text-decoration: none;
+    color: white;
+}
+
+a:hover {
+	color: orange;
+}
+
+ul li {
+    display: block;
+    color: orange;
+    margin: 10px 0px;
+}
+
+.box {
+    background-color: black;
+    width: 100%;
+    min-height: 500px;
+    color: white;
+    font-size: 50px;
+}
+
+.contents:nth-child(2n-1) {
+    background-color: orange;
+}
+
+#top_btn {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_btn #top_link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .contents {
+    padding: 30px;
+}
+
+.wrap .contents .title {
+    margin: 20px 0px;
+    font-size: 40px;
+    font-weight: bold;
+	font-family: 'SBAggroB';
+}
+
+.wrap .contents .write {
+    font-size: 20px;
+}
+
+
+#main .write {
+    font-family: 'SBAggroM';
+}
