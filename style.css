@@ -96,7 +96,7 @@ ul li {
     min-height: 300px;
     color: white;
     font-size: 50px;
-	padding: 30px;
+	
 }
 
 .contents:nth-child(2n-1) {
@@ -105,24 +105,20 @@ ul li {
 
 .contents .title {
 	height: 20%;
-    margin: 20px 0px;
+    margin: 3% 3%;
     font-size: 40px;
     font-weight: bold;
 	font-family: 'SBAggroB';
 }
 
 .contents .write {
+	margin: 3% 3%;
 	height: 80%;
     font-size: 20px;
 }
 
 .contents .write > div {
 	margin: 40px;
-}
-
-
-#main .write {
-    font-family: 'SBAggroM';
 }
 
 #top-btn {
@@ -132,12 +128,16 @@ ul li {
     bottom: 0;
     right: 0;
     border-radius: 20px;
-    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 	font-weight: lighter;
 	z-index: 999;
+}
+
+
+#main .write {
+    font-family: 'SBAggroM';
 }
 
 
@@ -272,4 +272,58 @@ ul li {
 .resume-wrap #resume-desArea #resume-deslist > li {
 	margin: 0;
 	color: white;
+}
+
+
+
+
+/*gclone area*/
+
+.gclone-wrap {
+	height: 100%;
+	background-color: white;
+	color: black;
+	font-size: 10px;
+	padding: 10px;
+}
+
+.gclone-wrap a {
+	color: black !important;
+}
+
+.gclone-wrap #gclone-header {
+	height: 10%;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.gclone-wrap > * {
+	
+}
+
+.gclone-wrap #gclone-header .left-box {
+	background-color: orange;
+	width: 30%;
+}
+
+.gclone-wrap #gclone-header .left-box > * {
+	margin-right: 10px;
+}
+
+.gclone-wrap #gclone-header .right-box {
+	background-color: cyan;
+	width: 70%;
+	justify-content: flex-end;
+}
+
+.gclone-wrap #gclone-header .right-box > * {
+	margin-left: 10px;
+}
+
+.gclone-wrap #gclone-contents-area {
+	height: 70%;
+}
+
+.gclone-wrap #gclone-footer {
+	height: 20%;
 }
