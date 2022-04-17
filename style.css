@@ -22,11 +22,37 @@
     font-style: normal;
 }
 
+.c-g {
+	background-color: #589957;
+}
+
+.c-lg {
+	background-color: #819F48;
+}
+
+.c-lo {
+	background-color: #FEB131;
+}
+
+.c-o {
+	background-color: #FF9518;
+}
+
+.c-br {
+	background-color: #BF9F78;
+}
+
+.c-b {
+	background-color: #242730;
+}
+
+
+
 html,
 body,
 .wrap {
     width: 100%;
-    font-family: 'NanumSquare';
+    font-family: 'SBAggroL';
 }
 
 a {
@@ -35,66 +61,215 @@ a {
 }
 
 a:hover {
-	color: orange;
+	color: #FF9518;
 }
 
 ul li {
     display: block;
-    color: orange;
+    color: #FF9518;
     margin: 10px 0px;
 }
 
-.box {
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex_row {
+	flex-direction: row;
+}
+
+.flex_center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex_position {
+	justify-content: space-around;
+	align-items: space-around;
+	flex-wrap: wrap;
+}
+
+.contents {
     background-color: black;
     width: 100%;
-    min-height: 500px;
+    min-height: 300px;
     color: white;
     font-size: 50px;
+	padding: 30px;
 }
 
 .contents:nth-child(2n-1) {
-    background-color: orange;
+    background-color: #242730;
 }
 
-#top_btn {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-radius: 50px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#top_btn #top_link {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-}
-
-.wrap .contents {
-    padding: 30px;
-}
-
-.wrap .contents .title {
+.contents .title {
+	height: 20%;
     margin: 20px 0px;
     font-size: 40px;
     font-weight: bold;
 	font-family: 'SBAggroB';
 }
 
-.wrap .contents .write {
+.contents .write {
+	height: 80%;
     font-size: 20px;
+}
+
+.contents .write > div {
+	margin: 40px;
 }
 
 
 #main .write {
     font-family: 'SBAggroM';
+}
+
+#top_btn {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-weight: lighter;
+	z-index: 999;
+}
+
+
+/* Chapter 1. Position Div CSS */
+
+.position_title {
+	margin-bottom: 10px;
+	font-weight: bold;
+	
+}
+
+.position_area {
+	width: 300px;
+	height: 300px;
+	border: 2px dashed white;
+	position: relative;
+}
+
+.position_area .position_box {
+	width: 100px;
+	height: 100px;
+}
+
+.position_area .box1-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+.position_area .box1-2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.position_area .box1-3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.position_area .box1-4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.position_area .box2-1 {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.position_area .box2-2 {
+	position: absolute;
+}
+
+.position_area .box3-1 {
+	flex: 1;
+	margin: 0 10px;
+}
+
+
+.position_area .box3-2 {
+	flex: 2
+}
+
+.position_area .box3-3 {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.position_area .box4-1 {
+	flex: 1;
+	margin: 10px 0;
+}
+
+
+.position_area .box4-2 {
+	flex: 2
+}
+
+.position_area .box4-3 {
+	flex: 1;
+	margin: 10px 0;
+}
+
+.position_area .box5-1 {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+/* Project 1 - Resume 작성 */
+.resume_wrap {
+	
+}
+
+.resume_wrap #resume_title {
+	font-size: 30px;
+}
+
+.resume_wrap .profile > img {
+	width: 150px;
+	border: 3px solid white;
+	margin: 30px 0;
+}
+
+
+.resume_wrap #resume_desArea {
+	width: 800px;
+	margin-top: 50px;
+	align-items: start;
+}
+
+.resume_wrap #resume_desArea #resume_des {
+	width: 50%;
+	margin-right: 10px;
+	border: 3px dashed white;
+	padding: 20px;
+}
+
+.resume_wrap #resume_desArea #resume_deslist {
+	width: 50%;
+}
+
+.resume_wrap #resume_desArea #resume_deslist > li {
+	margin: 0;
+	color: white;
 }

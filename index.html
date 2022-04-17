@@ -1,44 +1,119 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Start Vanilla JS</title>
-		<link rel="stylesheet" href="./reset.css">
-		<link rel="stylesheet" href="./style.css">
-	</head>
-	<body>
-		<div class="wrap">
-			<div id="top_btn"><a id="top_link" href="#main">MAIN</a></div>
-			<div id="main" class="box">
-				<div class="contents">
-					<h1 class="title">
-						Vanilla Coding Start Kit TIL 🔨
-					</h1>
-					<h2 class="write">
-						이 페이지는 '바닐라코딩 Starter Kit' 공부 기록을 남기기 위한 페이지입니다.
-					</h2>
-					<br/>
-					<h3 class="write">
-						<ul>
-							<li>🌱 StartKit: <a target="_blank" href="https://book.vanillacoding.co/starter-kit/">https://book.vanillacoding.co/starter-kit</a></li>
-							<li>🌱 Github: <a target="_blank" href="https://github.com/lux-02/vanillaCoding_startKit">https://github.com/lux-02/vanillaCoding_startKit</a></li>
-						</ul>
-					</h3>
+    <head>
+        <meta charset="utf-8" />
+        <title>Start Vanilla JS</title>
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="wrap flex">
+            <a id="top_link" href="#resume_title"><div id="top_btn" class="c-br">TOP</div></a>
+            <div id="main" class="contents">
+                <h1 class="title">
+                    Vanilla Coding Start Kit TIL 🔨
+                </h1>
+                <h2 class="write">
+                    이 페이지는 '바닐라코딩 Starter Kit' 공부 흔적이 담긴 페이지입니다.
+                </h2>
+                <br />
+                <h3 class="write">
+                    <ul>
+						+++ 관련 URL +++
+                        <li>
+                            🌱 StartKit:
+                            <a target="_blank" href="https://book.vanillacoding.co/starter-kit/"
+                                >https://book.vanillacoding.co/starter-kit</a
+                            >
+                        </li>
+                        <li>
+                            🌱 Github:
+                            <a
+                                target="_blank"
+                                href="https://github.com/lux-02/vanillaCoding_startKit"
+                                >https://github.com/lux-02/vanillaCoding_startKit</a
+                            >
+                        </li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="contents flex">
+                <div class="title">Position</div>
+                <div class="write flex flex_center flex_row flex_position">
+					<div>
+						<p class="position_title">Step 1.top bottom left right</p>
+						<div class=position_area>
+							<div class="position_box box1-1 c-o"></div>
+							<div class="position_box box1-2 c-g"></div>
+							<div class="position_box box1-3 c-g"></div>
+							<div class="position_box box1-4 c-o"></div>
+						</div>	
+					</div>
+					<div>
+						<p class="position_title">Step 2. top left 50% -50%</p>
+						<div class=position_area>
+							<div class="position_box box2-1 c-g">
+								<div class="position_box box2-2 c-lo"></div>
+							</div>
+						</div>	
+					</div>
+					<div>
+						<p class="position_title">Step 3. Flex Item 1 2 1</p>
+						<div class="position_area flex flex_row flex_center">
+							<div class="position_box box3-1 c-o"></div>
+							<div class="position_box box3-2 c-o"></div>
+							<div class="position_box box3-3 c-o"></div>
+						</div>	
+					</div>
+					<div>
+						<p class="position_title">Step 4. Flex Item 1 2 1 [Col]</p>
+						<div class="position_area flex flex_center">
+							<div class="position_box box4-1 c-lo"></div>
+							<div class="position_box box4-2 c-lo"></div>
+							<div class="position_box box4-3 c-lo"></div>
+						</div>	
+					</div>
+					<div>
+						<p class="position_title">Step 5. Flex Item Center </p>
+						<div class="position_area flex flex_center">
+							<div class="position_box flex flex_center box5-1 c-o">
+								<div class="position_box box5-2 c-lg"></div>
+							</div>
+						</div>	
+					</div>
 				</div>
-			</div>
-			<div class="box">
-				<div class="contents">
-					<div class="title">Step 1</div>
-					<div class="write">Step 1</div>
+            </div>
+            <div class="contents flex">
+                <div class="title">Project 1 - My Resume.</div>
+                <div class="write">
+					<div class="resume_wrap flex flex_center">
+						<p id="resume_title">
+							Resume
+						</p>
+						<div class="profile">
+							<img width="300px" src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="retriever">
+							
+						</div>
+						<p id="resume_name">
+							Retriever
+						</p>
+						
+						<div id="resume_desArea" class="flex flex_row flex_center">
+							<p id="resume_des" class="c-o">
+							저는 Retriever 입니다. 제가 살아온 곳은 미국입니다. 저는 미국에서 태어난 한국인입니다. 이제는 한국에서 일하고 싶습니다. 개발을 우연히 접하고, 개발자가 되고 싶다는 마음으로 한국에서 부트캠프를 수료했습니다.
+							</p>
+							<ul id="resume_deslist">
+								<li>- 1990년 출생</li>
+								<li>- ABC 칼리지 졸업</li>
+								<li>- GREAT COMPANY에서 회계업무</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="contents">
-					<div class="title">Step 2</div>
-					<div class="write">Step 2</div>
-				</div>
-				<div class="contents">
-					<div class="title">Step 3</div>
-					<div class="write">Step 3</div>
-				</div>
-			</div>
-		</div>
-	</body>
+            </div>
+            <div class="contents">
+                <div class="title">Step 3</div>
+                <div class="write">Step 3</div>
+            </div>
+        </div>
+    </body>
 </html>
