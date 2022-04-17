@@ -75,16 +75,16 @@ ul li {
 	flex-direction: column;
 }
 
-.flex_row {
+.flex-row {
 	flex-direction: row;
 }
 
-.flex_center {
+.flex-center {
 	justify-content: center;
 	align-items: center;
 }
 
-.flex_position {
+.flex-position {
 	justify-content: space-around;
 	align-items: space-around;
 	flex-wrap: wrap;
@@ -125,7 +125,7 @@ ul li {
     font-family: 'SBAggroM';
 }
 
-#top_btn {
+#top-btn {
     width: 80px;
     height: 40px;
     position: fixed;
@@ -143,50 +143,50 @@ ul li {
 
 /* Chapter 1. Position Div CSS */
 
-.position_title {
+.position-title {
 	margin-bottom: 10px;
 	font-weight: bold;
 	
 }
 
-.position_area {
+.position-area {
 	width: 300px;
 	height: 300px;
 	border: 2px dashed white;
 	position: relative;
 }
 
-.position_area .position_box {
+.position-area .position-box {
 	width: 100px;
 	height: 100px;
 }
 
-.position_area .box1-1 {
+.position-area .box1-1 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	
 }
 
-.position_area .box1-2 {
+.position-area .box1-2 {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-.position_area .box1-3 {
+.position-area .box1-3 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
-.position_area .box1-4 {
+.position-area .box1-4 {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
-.position_area .box2-1 {
+.position-area .box2-1 {
 	width: 200px;
 	height: 200px;
 	position: relative;
@@ -195,41 +195,41 @@ ul li {
 	transform: translate(-50%, -50%);
 }
 
-.position_area .box2-2 {
+.position-area .box2-2 {
 	position: absolute;
 }
 
-.position_area .box3-1 {
+.position-area .box3-1 {
 	flex: 1;
 	margin: 0 10px;
 }
 
 
-.position_area .box3-2 {
+.position-area .box3-2 {
 	flex: 2
 }
 
-.position_area .box3-3 {
+.position-area .box3-3 {
 	flex: 1;
 	margin: 0 10px;
 }
 
-.position_area .box4-1 {
+.position-area .box4-1 {
 	flex: 1;
 	margin: 10px 0;
 }
 
 
-.position_area .box4-2 {
+.position-area .box4-2 {
 	flex: 2
 }
 
-.position_area .box4-3 {
+.position-area .box4-3 {
 	flex: 1;
 	margin: 10px 0;
 }
 
-.position_area .box5-1 {
+.position-area .box5-1 {
 	width: 200px;
 	height: 200px;
 }
@@ -237,39 +237,39 @@ ul li {
 
 
 /* Project 1 - Resume 작성 */
-.resume_wrap {
+.resume-wrap {
 	
 }
 
-.resume_wrap #resume_title {
+.resume-wrap #resume-title {
 	font-size: 30px;
 }
 
-.resume_wrap .profile > img {
+.resume-wrap .profile > img {
 	width: 150px;
 	border: 3px solid white;
 	margin: 30px 0;
 }
 
 
-.resume_wrap #resume_desArea {
+.resume-wrap #resume-desArea {
 	width: 800px;
 	margin-top: 50px;
 	align-items: start;
 }
 
-.resume_wrap #resume_desArea #resume_des {
+.resume-wrap #resume-desArea #resume-des {
 	width: 50%;
 	margin-right: 10px;
 	border: 3px dashed white;
 	padding: 20px;
 }
 
-.resume_wrap #resume_desArea #resume_deslist {
+.resume-wrap #resume-desArea #resume-deslist {
 	width: 50%;
 }
 
-.resume_wrap #resume_desArea #resume_deslist > li {
+.resume-wrap #resume-desArea #resume-deslist > li {
 	margin: 0;
 	color: white;
 }
