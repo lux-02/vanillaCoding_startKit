@@ -1,3 +1,75 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.c-g {
+	background-color: #589957;
+}
+
+.c-lg {
+	background-color: #819F48;
+}
+
+.c-lo {
+	background-color: #FEB131;
+}
+
+.c-o {
+	background-color: #FF9518;
+}
+
+.c-br {
+	background-color: #BF9F78;
+}
+
+.c-b {
+	background-color: #242730;
+}
+
+
+
+html,
+body,
+.wrap {
+    width: 100%;
+    font-family: 'SBAggroL';
+}
+
+a {
+	text-decoration: none;
+    color: white;
+}
+
+a:hover {
+	color: #FF9518;
+}
+
+ul li {
+    display: block;
+    color: #FF9518;
+    margin: 10px 0px;
+}
+
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -11,6 +83,199 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.flex-position {
+	justify-content: space-around;
+	align-items: space-around;
+	flex-wrap: wrap;
+}
+
+.contents {
+    background-color: black;
+    width: 100%;
+    min-height: 300px;
+    color: white;
+    font-size: 50px;
+	
+}
+
+.contents:nth-child(2n-1) {
+    background-color: #242730;
+}
+
+.contents .title {
+	height: 20%;
+    margin: 3% 3%;
+    font-size: 40px;
+    font-weight: bold;
+	font-family: 'SBAggroB';
+}
+
+.contents .write {
+	margin: 3% 3%;
+	height: 80%;
+    font-size: 20px;
+}
+
+.contents .write > div {
+	margin: 40px;
+}
+
+#top-btn {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-weight: lighter;
+	z-index: 999;
+}
+
+
+#main .write {
+    font-family: 'SBAggroM';
+}
+
+
+/* Chapter 1. Position Div CSS */
+
+.position-title {
+	margin-bottom: 10px;
+	font-weight: bold;
+	
+}
+
+.position-area {
+	width: 300px;
+	height: 300px;
+	border: 2px dashed white;
+	position: relative;
+}
+
+.position-area .position-box {
+	width: 100px;
+	height: 100px;
+}
+
+.position-area .box1-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+.position-area .box1-2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.position-area .box1-3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.position-area .box1-4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.position-area .box2-1 {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.position-area .box2-2 {
+	position: absolute;
+}
+
+.position-area .box3-1 {
+	flex: 1;
+	margin: 0 10px;
+}
+
+
+.position-area .box3-2 {
+	flex: 2
+}
+
+.position-area .box3-3 {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.position-area .box4-1 {
+	flex: 1;
+	margin: 10px 0;
+}
+
+
+.position-area .box4-2 {
+	flex: 2
+}
+
+.position-area .box4-3 {
+	flex: 1;
+	margin: 10px 0;
+}
+
+.position-area .box5-1 {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+/* Project 1 - Resume 작성 */
+.resume-wrap {
+	
+}
+
+.resume-wrap #resume-title {
+	font-size: 30px;
+}
+
+.resume-wrap .profile > img {
+	width: 150px;
+	border: 3px solid white;
+	margin: 30px 0;
+}
+
+
+.resume-wrap #resume-desArea {
+	width: 800px;
+	margin-top: 50px;
+	align-items: start;
+}
+
+.resume-wrap #resume-desArea #resume-des {
+	width: 50%;
+	margin-right: 10px;
+	border: 3px dashed white;
+	padding: 20px;
+}
+
+.resume-wrap #resume-desArea #resume-deslist {
+	width: 50%;
+}
+
+.resume-wrap #resume-desArea #resume-deslist > li {
+	margin: 0;
+	color: white;
+}
+
+
+
 
 /*gclone area*/
 
@@ -35,9 +300,15 @@
 
 
 /* Header-Area */
+
+.gclone-wrap a:hover {
+	border-bottom: 1px solid black;
+}
+
 .gclone-wrap {
 	width: 958px;
 	height: 439px;
+	background: white;
 }
 
 

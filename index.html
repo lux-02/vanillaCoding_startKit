@@ -1,112 +1,245 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Google Clone</title>
+        <title>Start Vanilla JS</title>
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <div class="glcone-wrapper flex flex-center">
-            <div class="gclone-wrap flex">
-                <header id="gclone-header" class="flex flex-row">
-                    <div class="left-box flex flex-row">
-                        <span>
-                            <a href="#">
-                                Google 정보
-                            </a>
-                        </span>
-                        <span>
-                            <a href="#">
-                                스토어
-                            </a>
-                        </span>
-                    </div>
-                    <div class="right-box flex flex-row">
-                        <span>
-                            <a href="#">
-                                Gmail
-                            </a>
-                        </span>
-                        <span>
-                            <a href="#">
-                                이미지
-                            </a>
-                        </span>
-                        <div class="header-icon-area">
-                            <img alt="menu icon" src="./src/menu.png" width="20px" height="20px" />
+        <div class="wrap flex">
+            <a id="top-link" href="#gclone"><div id="top-btn" class="c-br">TOP</div></a>
+            <div id="main" class="contents">
+                <h1 class="title">
+                    Vanilla Coding Start Kit TIL 🔨
+                </h1>
+                <h2 class="write">
+                    이 페이지는 '바닐라코딩 Starter Kit' 공부 흔적이 담긴 페이지입니다.
+                </h2>
+                <br />
+                <h3 class="write">
+                    <ul>
+                        +++ 관련 URL +++
+                        <li>
+                            🌱 StartKit:
+                            <a target="_blank" href="https://book.vanillacoding.co/starter-kit/"
+                                >https://book.vanillacoding.co/starter-kit</a
+                            >
+                        </li>
+                        <li>
+                            🌱 Github:
+                            <a
+                                target="_blank"
+                                href="https://github.com/lux-02/vanillaCoding_startKit"
+                                >https://github.com/lux-02/vanillaCoding_startKit</a
+                            >
+                        </li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="contents flex">
+                <div class="title">Position</div>
+                <div class="write flex flex-center flex-row flex-position">
+                    <div>
+                        <p class="position-title">Step 1.top bottom left right</p>
+                        <div class="position-area">
+                            <div class="position-box box1-1 c-o"></div>
+                            <div class="position-box box1-2 c-g"></div>
+                            <div class="position-box box1-3 c-g"></div>
+                            <div class="position-box box1-4 c-o"></div>
                         </div>
-                        <button type="button" onclick="location.href='#'" class="login-btn">
-                            로그인
-                        </button>
                     </div>
-                </header>
-                <div id="gclone-contents-area" class="flex flex-center">
-                    <div class="logo-area flex flex-center">
-                        <img
-                            alt="Google logo"
-                            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                        />
-                    </div>
-                    <div class="search-area flex flex-row">
-                        <div class="search-icon-area">
-                            <img
-                                alt="search icon"
-                                src="./src/search.png"
-                                width="20px"
-                                height="20px"
-                            />
-                        </div>
-                        <div class="act-icon-area flex flex-row">
-                            <div class="keyboard-icon-area">
-                                <a href="#"
-                                    ><img
-                                        alt="keyboard icon"
-                                        src="./src/keyboard.png"
-                                        width="20px"
-                                        height="20px"
-                                /></a>
-                            </div>
-                            <div class="mic-icon-area">
-                                <a href="#"
-                                    ><img
-                                        alt="mic icon"
-                                        src="./src/mic.png"
-                                        width="20px"
-                                        height="20px"
-                                /></a>
+                    <div>
+                        <p class="position-title">Step 2. top left 50% -50%</p>
+                        <div class="position-area">
+                            <div class="position-box box2-1 c-g">
+                                <div class="position-box box2-2 c-lo"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-area flex">
-                        <div class="btn-google-search flex flex-row">
-                            <button type="button" onclick="location.href='#'" class="contents-btn">
-                                Google 검색
-                            </button>
-                            <button type="button" onclick="location.href='#'" class="contents-btn">
-                                I’m Feeling Lucky
-                            </button>
+                    <div>
+                        <p class="position-title">Step 3. Flex Item 1 2 1</p>
+                        <div class="position-area flex flex-row flex-center">
+                            <div class="position-box box3-1 c-o"></div>
+                            <div class="position-box box3-2 c-o"></div>
+                            <div class="position-box box3-3 c-o"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="position-title">Step 4. Flex Item 1 2 1 [Col]</p>
+                        <div class="position-area flex flex-center">
+                            <div class="position-box box4-1 c-lo"></div>
+                            <div class="position-box box4-2 c-lo"></div>
+                            <div class="position-box box4-3 c-lo"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="position-title">Step 5. Flex Item Center</p>
+                        <div class="position-area flex flex-center">
+                            <div class="position-box flex flex-center box5-1 c-o">
+                                <div class="position-box box5-2 c-lg"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <footer id="gclone-footer">
-                    <div class="footer1">
-                        <span><a href="#">대한민국</a></span>
-                    </div>
-                    <div class="footer2-wrap flex flex-center">
-                        <div class="footer2 flex flex-row">
-                            <div class="footer-ad-area">
-                                <span><a href="#">광고</a></span>
-                                <span><a href="#">비즈니스</a></span>
-                                <span><a href="#">검색의 원리</a></span>
-                            </div>
-                            <div class="footer-setting-area">
-                                <span><a href="#">개인정보처리방침</a></span>
-                                <span><a href="#">약관</a></span>
-                                <span><a href="#">설정</a></span>
-                            </div>
+            </div>
+            <div class="contents flex">
+                <div class="title">Project 1 - My Resume.</div>
+                <div class="write">
+                    <div class="resume-wrap flex flex-center">
+                        <p id="resume-title">
+                            Resume
+                        </p>
+                        <div class="profile">
+                            <img
+                                width="300px"
+                                src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="retriever"
+                            />
+                        </div>
+                        <p id="resume-name">
+                            Retriever
+                        </p>
+
+                        <div id="resume-desArea" class="flex flex-row flex-center">
+                            <p id="resume-des" class="c-o">
+                                저는 Retriever 입니다. 제가 살아온 곳은 미국입니다. 저는 미국에서
+                                태어난 한국인입니다. 이제는 한국에서 일하고 싶습니다. 개발을 우연히
+                                접하고, 개발자가 되고 싶다는 마음으로 한국에서 부트캠프를
+                                수료했습니다.
+                            </p>
+                            <ul id="resume-deslist">
+                                <li>- 1990년 출생</li>
+                                <li>- ABC 칼리지 졸업</li>
+                                <li>- GREAT COMPANY에서 회계업무</li>
+                            </ul>
                         </div>
                     </div>
-                </footer>
+                </div>
+            </div>
+            <div class="contents flex">
+                <div class="title">Project 2 - Google Clone</div>
+                <div class="write">
+                    <div id="gclone" class="glcone-wrapper flex flex-center">
+                        <div class="gclone-wrap flex">
+                            <header id="gclone-header" class="flex flex-row">
+                                <div class="left-box flex flex-row">
+                                    <span>
+                                        <a href="#">
+                                            Google 정보
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#">
+                                            스토어
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="right-box flex flex-row">
+                                    <span>
+                                        <a href="#">
+                                            Gmail
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#">
+                                            이미지
+                                        </a>
+                                    </span>
+                                    <div class="header-icon-area">
+                                        <img
+                                            alt="menu icon"
+                                            src="./src/menu.png"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                    </div>
+                                    <button
+                                        type="button"
+                                        onclick="location.href='#'"
+                                        class="login-btn"
+                                    >
+                                        로그인
+                                    </button>
+                                </div>
+                            </header>
+                            <div id="gclone-contents-area" class="flex flex-center">
+                                <div class="logo-area flex flex-center">
+                                    <img
+                                        alt="Google logo"
+                                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                                    />
+                                </div>
+                                <div class="search-area flex flex-row">
+                                    <div class="search-icon-area">
+                                        <img
+                                            alt="search icon"
+                                            src="./src/search.png"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                    </div>
+                                    <div class="act-icon-area flex flex-row">
+                                        <div class="keyboard-icon-area">
+                                            <a href="#"
+                                                ><img
+                                                    alt="keyboard icon"
+                                                    src="./src/keyboard.png"
+                                                    width="20px"
+                                                    height="20px"
+                                            /></a>
+                                        </div>
+                                        <div class="mic-icon-area">
+                                            <a href="#"
+                                                ><img
+                                                    alt="mic icon"
+                                                    src="./src/mic.png"
+                                                    width="20px"
+                                                    height="20px"
+                                            /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area flex">
+                                    <div class="btn-google-search flex flex-row">
+                                        <button
+                                            type="button"
+                                            onclick="location.href='#'"
+                                            class="contents-btn"
+                                        >
+                                            Google 검색
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onclick="location.href='#'"
+                                            class="contents-btn"
+                                        >
+                                            I’m Feeling Lucky
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer id="gclone-footer">
+                                <div class="footer1">
+                                    <span><a href="#">대한민국</a></span>
+                                </div>
+                                <div class="footer2-wrap flex flex-center">
+                                    <div class="footer2 flex flex-row">
+                                        <div class="footer-ad-area">
+                                            <span><a href="#">광고</a></span>
+                                            <span><a href="#">비즈니스</a></span>
+                                            <span><a href="#">검색의 원리</a></span>
+                                        </div>
+                                        <div class="footer-setting-area">
+                                            <span><a href="#">개인정보처리방침</a></span>
+                                            <span><a href="#">약관</a></span>
+                                            <span><a href="#">설정</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
