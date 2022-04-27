@@ -47,6 +47,12 @@
 }
 
 
+.exp {
+	font-size: 14px;
+	margin-top: 50px;
+	color: darkgray;
+}
+
 
 html,
 body,
@@ -456,6 +462,7 @@ ul li {
 	background: none;
 	border: 1px solid white;
 	border-radius: 10px;
+	text-indent: 10px;
 }
 
 .js1-wrap .js1-input::placeholder {
@@ -465,4 +472,29 @@ ul li {
 .js1-wrap .js1-input:focus {
 	color: white;
 	border-radius: 10px;
+}
+
+
+/* js2 Area */
+
+.js2-wrap span {
+	margin-right: 10px;
+}
+
+.js2-wrap .js2-submit-btn {
+	display: none;
+}
+
+.js2-wrap .js2-input {
+	background: none;
+	border: 1px solid white;
+	border-radius: 4px;
+	height: 30px;
+	width: 300px;
+	color: white;
+	text-indent: 5px;
+}
+
+.js2-wrap .js2-input::placeholder {
+	text-indent: 5px;
 }
