@@ -4,8 +4,7 @@
         <title>Start Vanilla JS</title>
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
-		<script src="./js/script.js"></script>
-
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <div class="wrap flex">
@@ -82,7 +81,9 @@
                             </div>
                         </div>
                     </div>
-					<span class="exp">Margin 속성 및 Position, Flex를 이용한 레이아웃 연습 입니다.</span>
+                    <span class="exp"
+                        >Margin 속성 및 Position, Flex를 이용한 레이아웃 연습 입니다.</span
+                    >
                 </div>
             </div>
             <div class="contents flex">
@@ -116,7 +117,7 @@
                                 <li>- GREAT COMPANY에서 회계업무</li>
                             </ul>
                         </div>
-						<span class="exp">CSS 기초 / 주어진 내용으로 My Resume 만들기입니다.</span>
+                        <span class="exp">CSS 기초 / 주어진 내용으로 My Resume 만들기입니다.</span>
                     </div>
                 </div>
             </div>
@@ -242,35 +243,71 @@
                                 </div>
                             </footer>
                         </div>
-						<span class="exp">동작을 제외한 구글 클론 코딩 프로젝트입니다.</span>
+                        <span class="exp">동작을 제외한 구글 클론 코딩 프로젝트입니다.</span>
                     </div>
                 </div>
             </div>
-			<div class="contents flex">
-				<div class="title">JS.1 - CRUD </div>
-                <div class="write"> 
-					<div class="js1-wrap flex flex-center">
-						<h1 class="js1-header">Typing..</h1>
-						<input class="js1-input" type="text" placeholder="Typing.." onKeydown="changeHeader()" />	
-						<span class="exp">Input 박스에 텍스트를 입력하면 자동으로 Heading 값이 바뀌게 됩니다.</span>
-					</div>
-				</div>
-			</div>
-			
-			<div class="contents flex">
-				<div class="title">JS.2 - Variables </div>
-                <div class="write"> 
-					<div class="js2-wrap flex flex-center" id="js2">
-						<form onsubmit="changeUser(); return false" class="flex flex-row">
-							<span>Name:</span><input class="js2-input" type="text" placeholder="이름을 입력하시오.."/>	
-							<input class="js2-submit-btn" type="submit" value="제출">
-						</form>
-						<span class="exp">Input 박스에 텍스트를 입력하고 Enter Key로 Submit을 하면 Alert를 통해 표시됩니다.</span>
-					</div>
-				</div>
-			</div>
-			
-			
+            <div class="contents flex">
+                <div class="title">JS.1 - CRUD</div>
+                <div class="write">
+                    <div class="js1-wrap flex flex-center">
+                        <h1 class="js1-header">Typing..</h1>
+                        <input
+                            class="js1-input"
+                            type="text"
+                            placeholder="Typing.."
+                            onKeydown="changeHeader()"
+                        />
+                        <span class="exp"
+                            >Input 박스에 텍스트를 입력하면 자동으로 Heading 값이 바뀌게
+                            됩니다.</span
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents flex">
+                <div class="title">JS.2 - Variables</div>
+                <div class="write">
+                    <div class="js2-wrap flex flex-center" id="js2">
+                        <form onsubmit="changeUser(); return false" class="flex flex-row">
+                            <span>Name:</span
+                            ><input
+                                class="js2-input"
+                                type="text"
+                                placeholder="이름을 입력하시오.."
+                            />
+                            <input class="js2-submit-btn" type="submit" value="제출" />
+                        </form>
+                        <span class="exp"
+                            >Input 박스에 텍스트를 입력하고 Enter Key로 Submit을 하면 Alert를 통해
+                            표시됩니다.</span
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents flex">
+                <div class="title">JS.3 - FizzBuzz</div>
+                <div class="write">
+                    <div class="js3-wrap flex flex-center" id="js3">
+                        <button type="button" onclick="fizzBuzz()">
+                            Test
+                        </button>
+                        <div class="js3-output-wrap flex flex-center">
+                            <p class="js3-output1"></p>
+                            <span class="js3-output2">
+                                Test
+                            </span>
+                        </div>
+                        <span class="exp"
+                            >1부터 100까지 숫자 중
+                            3의 배수는 "fizz", 5의 배수는 "buzz", 3과 5의 공배수는 "fizzbuzz"를 출력합니다.
+						</span
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -498,3 +498,35 @@ ul li {
 .js2-wrap .js2-input::placeholder {
 	text-indent: 5px;
 }
+
+
+
+
+/* js3 Area */
+
+.js3-wrap {
+	
+}
+
+.js3-wrap button {
+	width: 130px;
+	height: 40px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+}
+
+.js3-wrap .js3-output-wrap {
+	width: 500px;
+	height: 500px;
+	word-break:break-all;
+		
+}
+
+.js3-wrap .js3-output1 {
+	margin-bottom: 50px;
+}
+
+.js3-wrap .js3-output1 p {
+	margin-bottom: 10px;
+}
