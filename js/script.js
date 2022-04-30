@@ -64,3 +64,34 @@ function fizzBuzz(){
 		contentsWrap.appendChild(arrx[i]);	
 	}
 }
+
+
+function findKen(array){
+	let arrayArea = document.querySelector('.js4-par');
+	let returnArea = document.querySelector('.js4-ret');
+	let kenLoc = array.indexOf('Ken');
+	arrayArea.textContent = array.toString();
+	returnArea.textContent = (kenLoc+1).toString()+"번째 위치에 있네요!";
+}
+
+const kenArr1 = ['Jett', 'Leo', 'Ken', 'Justin'];
+findKen(kenArr1);
+
+const kenArr2 = ["Lee", "Park", "Jung", "Ken"];
+
+
+let arrState = 1;
+	
+function changeArray(){
+	const changeArea = document.querySelector('.js4-btn');	
+	if(arrState === 1){
+		findKen(kenArr2);
+		changeArea.textContent = "1번 예시 보기"
+		arrState = 2;
+	}
+	else {
+		findKen(kenArr1);
+		changeArea.textContent = "2번 예시 보기"
+		arrState = 1;
+	}
+}

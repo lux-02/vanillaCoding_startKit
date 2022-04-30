@@ -504,10 +504,6 @@ ul li {
 
 /* js3 Area */
 
-.js3-wrap {
-	
-}
-
 .js3-wrap button {
 	width: 130px;
 	height: 40px;
@@ -529,4 +525,43 @@ ul li {
 
 .js3-wrap .js3-output1 p {
 	margin-bottom: 10px;
+}
+
+/* js4 Area */
+.js4-wrap .js4-par {
+	margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js4-wrap .js4-ret {
+	margin-bottom: 20px;
+	background-color: #FEB131;
+	color: white;
+	width: 100%;
+	border: 1px solid #FEB131;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js4-wrap .js4-btn {
+	background-color: inherit;
+	color: white;
+	width: 50%;
+	border: 2px dashed white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
 }
