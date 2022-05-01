@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="wrap flex">
-            <a id="top-link" href="#js4"><div id="top-btn" class="c-br">TOP</div></a>
+            <a id="top-link" href="#js6"><div id="top-btn" class="c-br">TOP</div></a>
             <div id="main" class="contents">
                 <h1 class="title">
                     Vanilla Coding Start Kit TIL 🔨
@@ -36,9 +36,10 @@
                     </ul>
                 </h3>
             </div>
+			
             <div class="contents flex">
                 <div class="title">Position</div>
-                <div class="write flex flex-center flex-row flex-position">
+                <div class="write flex flex-center flex-row flex-position" id="position">
                     <div>
                         <p class="position-title">Step 1.top bottom left right</p>
                         <div class="position-area">
@@ -85,10 +86,11 @@
                     >
                 </div>
             </div>
+			
             <div class="contents flex">
                 <div class="title">Project 1 - My Resume.</div>
                 <div class="write">
-                    <div class="resume-wrap flex flex-center">
+                    <div class="resume-wrap flex flex-center" id="resume">
                         <p id="resume-title">
                             Resume
                         </p>
@@ -102,7 +104,6 @@
                         <p id="resume-name">
                             Retriever
                         </p>
-
                         <div id="resume-desArea" class="flex flex-row flex-center">
                             <p id="resume-des" class="c-o">
                                 저는 Retriever 입니다. 제가 살아온 곳은 미국입니다. 저는 미국에서
@@ -120,10 +121,11 @@
                     </div>
                 </div>
             </div>
+			
             <div class="contents flex">
                 <div class="title">Project 2 - Google Clone</div>
                 <div class="write">
-                    <div id="gclone" class="glcone-wrapper flex flex-center">
+                    <div id="gclone" class="glcone-wrapper flex flex-center" id="gclone">
                         <div class="gclone-wrap flex">
                             <header id="gclone-header" class="flex flex-row">
                                 <div class="left-box flex flex-row">
@@ -246,10 +248,11 @@
                     </div>
                 </div>
             </div>
+			
             <div class="contents flex">
                 <div class="title">JS.1 - CRUD</div>
                 <div class="write">
-                    <div class="js1-wrap flex flex-center">
+                    <div class="js1-wrap flex flex-center" id="js1">
                         <h1 class="js1-header">Typing..</h1>
                         <input
                             class="js1-input"
@@ -314,16 +317,19 @@
 				</div>
 				<div class="write">
 					<div class="js4-wrap flex flex-center" id=js4>
-					<p class="js4-par">
-						Parameter
-					</p>
-					<p class="js4-ret">
-						Return
-					</p>
-					<button onclick="changeArray()" type="button" class="js4-btn">
-						2번 예시 보기
-					</button>
-				</div>
+						<p class="js4-par">
+							Parameter
+						</p>
+						<p class="js4-ret">
+							Return
+						</p>
+						<button onclick="changeArray()" type="button" class="js4-btn">
+							2번 예시 보기
+						</button>
+						<span class="exp">
+							배열로 구성된 TestCase에서 Ken의 위치를 찾아 알려줍니다.
+						</span>
+					</div>
 				</div>
 			</div>
         </div>
@@ -333,15 +339,39 @@
 				JS.5 - BACOBACOBACOBA
 			</div>
 			<div class="write">
-				<div class="js5-wrap flex flex-center">
-					
+				<div class="js5-wrap flex flex-center" id="js5">
 					<input id="pI" type="number" class="js5-param" onClick="baco()">
 					<p class="js5-baco">
 						바
 					</p>
+					<span class="exp">
+						주어진 인자에 따라 바, 코, 바 순서로 반환합니다.
+					</span>
 				</div>
 			</div>
 		</div>
+		
+		<div class="contents flex">
+				<div class="title">
+					JS.6 - Minimum Number
+				</div>
+				<div class="write">
+					<div class="js6-wrap flex flex-center" id=js6>
+						<p class="js6-par">
+							Parameter
+						</p>
+						<p class="js6-ret">
+							Return
+						</p>
+						<button onclick="changeArray2()" type="button" class="js6-btn">
+							2번 예시 보기
+						</button>
+						<span class="exp">
+							배열로 구성된 TestCase에서 가장 작은 숫자를 찾아 알려줍니다.
+						</span>
+					</div>
+				</div>
+			</div>
 		<script src="./js/script.js"></script>
     </body>
 </html>

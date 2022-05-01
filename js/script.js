@@ -1,3 +1,4 @@
+// JS.1 - CRUD
 function changeHeader(){
 	const header = document.querySelector('.js1-header')
 	const input = document.querySelector(".js1-input");
@@ -8,12 +9,16 @@ function changeHeader(){
 }
 
 
+// JS.2 - Variables
+
 function changeUser(){
 	const username = document.querySelector('.js2-input').value;
 	const introduction = "당신의 이름은 " + username + "입니다.";
 	alert(introduction + "🎉");
 }
 
+
+// JS.3 - FizzBuzz
 
 function fizzBuzz(){
 	const outputWrap = document.querySelector('.js3-output-wrap');
@@ -66,6 +71,8 @@ function fizzBuzz(){
 }
 
 
+// JS.4 - Find KEN
+
 function findKen(array){
 	let arrayArea = document.querySelector('.js4-par');
 	let returnArea = document.querySelector('.js4-ret');
@@ -74,27 +81,26 @@ function findKen(array){
 	returnArea.textContent = (kenLoc+1).toString()+"번째 위치에 있네요!";
 }
 
-const kenArr1 = ['Jett', 'Leo', 'Ken', 'Justin'];
-findKen(kenArr1);
-
-const kenArr2 = ["Lee", "Park", "Jung", "Ken"];
-
+const kenArr = [['Jett', 'Leo', 'Ken', 'Justin'], ["Lee", "Park", "Jung", "Ken"]]
+findKen(kenArr[0]);
 
 let arrState = 1;
 	
 function changeArray(){
 	const changeArea = document.querySelector('.js4-btn');	
 	if(arrState === 1){
-		findKen(kenArr2);
+		findKen(kenArr[1]);
 		changeArea.textContent = "1번 예시 보기"
 		arrState = 2;
 	}
 	else {
-		findKen(kenArr1);
+		findKen(kenArr[0]);
 		changeArea.textContent = "2번 예시 보기"
 		arrState = 1;
 	}
 }
+
+// JS.5 - BACOBACOBACOBA
 
 function baco(){
 	const bacoWrap = document.querySelector('.js5-baco');
@@ -104,14 +110,11 @@ function baco(){
 		for(let i=0; i<y.value; i++){
 			if(i%2==0){
 				resultArr.push("바");
-				console.log("바");
 			}
 			else{
 				resultArr.push("코");
-				console.log("코");
 			}
 		}
-		console.log(resultArr);
 		bacoWrap.textContent = resultArr.join('');
 		return resultArr;
 	}
@@ -122,3 +125,48 @@ function baco(){
 }
 
 baco();
+
+
+
+// JS.6 - Minimum Number
+
+function findMin(array){
+	let arrayArea = document.querySelector('.js6-par');
+	let returnArea = document.querySelector('.js6-ret');
+	let min = 999;
+	
+	for(let i=0; i<array.length; i++){
+		console.log(array[i], min);
+		if(min > array[i]){
+			min = array[i];
+		}
+	}
+	
+	console.log(min);
+	
+	arrayArea.textContent = array.toString();
+	returnArea.textContent = "제일 작은 숫자는 "+min.toString()+"입니다!";
+}
+
+const numArr = [[5, 4, 3, 2, 1], [4, 5, 1, 2, 3], [10, 7, 13, 2, 6]];
+findMin(numArr[0]);
+
+function changeArray2(){
+	const changeArea = document.querySelector('.js6-btn');	
+	switch (arrState){
+		case 1 :
+			findMin(numArr[1]);
+			changeArea.textContent = "3번 예시 보기"
+			arrState = 2;
+			break;
+		case 2 :
+			findMin(numArr[2]);
+			changeArea.textContent = "1번 예시 보기"
+			arrState = 3;
+			break;
+		default :
+			findMin(numArr[0]);
+			changeArea.textContent = "2번 예시 보기"
+			arrState = 1;
+	}
+}
