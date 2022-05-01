@@ -127,7 +127,6 @@ function baco(){
 baco();
 
 
-
 // JS.6 - Minimum Number
 
 function findMin(array){
@@ -166,6 +165,48 @@ function changeArray2(){
 			break;
 		default :
 			findMin(numArr[0]);
+			changeArea.textContent = "2번 예시 보기"
+			arrState = 1;
+	}
+}
+
+
+
+// JS.7 - Double Array
+
+function makeDouble(array){
+	let arrayArea = document.querySelector('.js7-par');
+	let returnArea = document.querySelector('.js7-ret');
+	let copyArr = [...array];
+	let returnArr = [];
+	
+	for (let i=0; i<copyArr.length; i++){
+		returnArr[i] = copyArr[i];
+		returnArr[i+copyArr.length] = copyArr[i];
+	}
+	
+	arrayArea.textContent = copyArr.toString();
+	returnArea.textContent = returnArr.toString()+"입니다!";
+}
+
+const doubleArr = [[1, 2], [1, 2, 3], [5, 7, 3, 2]];
+makeDouble(doubleArr[0]);
+
+function changeArray3(){
+	const changeArea = document.querySelector('.js7-btn');	
+	switch (arrState){
+		case 1 :
+			makeDouble(doubleArr[1]);
+			changeArea.textContent = "3번 예시 보기"
+			arrState = 2;
+			break;
+		case 2 :
+			makeDouble(doubleArr[2]);
+			changeArea.textContent = "1번 예시 보기"
+			arrState = 3;
+			break;
+		default :
+			makeDouble(doubleArr[0]);
 			changeArea.textContent = "2번 예시 보기"
 			arrState = 1;
 	}

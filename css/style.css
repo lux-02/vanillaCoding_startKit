@@ -649,3 +649,49 @@ input[type='number']::-webkit-inner-spin-button {
 	background-color: blue;
 	
 }
+
+
+
+/* js7 Area */
+.js7-wrap .js7-par {
+	margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js7-wrap .js7-ret {
+	margin-bottom: 20px;
+	background-color: #589957;
+	color: white;
+	width: 100%;
+	border: 1px solid #589957;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js7-wrap .js7-btn {
+	background-color: inherit;
+	color: white;
+	width: 50%;
+	border: 2px dashed white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.js7-wrap .js7-btn:hover {
+	background-color: blue;
+	
+}
