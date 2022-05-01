@@ -29,29 +29,24 @@ function fizzBuzz(){
 		let fb=0; let fi=0; let bu=0;
 		for (i=1; i<=100; i++) {
 			if (i%3==0 && i%5==0){
-				console.log('fizzbuzz');
 				arr.push('fizzbuzz');
 				fb += 1;
 			}			
 			else if (i%3==0){
-				console.log('fizz');
 				arr.push('fizz');
 				fi += 1;
 			}
 			else if(i%5==0){
-				console.log('buzz');
 				arr.push('buzz');
 				bu += 1;
 			}
 			else {
-				console.log(i);	
 				arr.push(i);
 			}
 		}
 		arr.push(fb, fi, bu);
 		return arr;
 	}
-	console.log(loopx().toString());
 	fb = loopx()[100];
 	fi = loopx()[101];
 	bu = loopx()[102];
@@ -135,14 +130,10 @@ function findMin(array){
 	let min = 999;
 	
 	for(let i=0; i<array.length; i++){
-		console.log(array[i], min);
 		if(min > array[i]){
 			min = array[i];
 		}
-	}
-	
-	console.log(min);
-	
+	}	
 	arrayArea.textContent = array.toString();
 	returnArea.textContent = "제일 작은 숫자는 "+min.toString()+"입니다!";
 }
@@ -207,6 +198,48 @@ function changeArray3(){
 			break;
 		default :
 			makeDouble(doubleArr[0]);
+			changeArea.textContent = "2번 예시 보기"
+			arrState = 1;
+	}
+}
+
+
+
+
+// JS.8 - Split Int Array
+
+function splitArr(int){
+	let arrayArea = document.querySelector('.js8-par');
+	let returnArea = document.querySelector('.js8-ret');
+	let returnArr = [];
+	let x = int.toString();
+	
+	for (let i=0; i<x.length; i++){
+		returnArr.push(parseInt(x[i]));
+	}
+	
+	arrayArea.textContent = int.toString();
+	returnArea.textContent = '['+returnArr+"] 입니다!";
+}
+
+const testArr = [2854, 96586, 136326];
+splitArr(testArr[0]);
+
+function changeArray4(){
+	const changeArea = document.querySelector('.js8-btn');	
+	switch (arrState){
+		case 1 :
+			splitArr(testArr[1]);
+			changeArea.textContent = "3번 예시 보기"
+			arrState = 2;
+			break;
+		case 2 :
+			splitArr(testArr[2]);
+			changeArea.textContent = "1번 예시 보기"
+			arrState = 3;
+			break;
+		default :
+			splitArr(testArr[0]);
 			changeArea.textContent = "2번 예시 보기"
 			arrState = 1;
 	}
