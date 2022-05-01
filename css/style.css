@@ -527,6 +527,8 @@ ul li {
 	margin-bottom: 10px;
 }
 
+
+
 /* js4 Area */
 .js4-wrap .js4-par {
 	margin-bottom: 20px;
@@ -564,4 +566,40 @@ ul li {
 	border-radius: 10px;
 	font-size: 14px;
 	font-weight: bold;
+}
+
+.js4-wrap .js4-btn:hover {
+	background-color: blue;
+	
+}
+
+
+/* js5 Area */
+.js5-wrap .js5-param {
+	margin-bottom: 20px;
+	width: 300px;
+	border: 1px solid white;
+	height: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: none;
+	color: white;
+	font-size: 20px;
+}
+
+.js5-wrap .js5-param:focus {
+	border-radius: 10px;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: inner-spin-button !important;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+	opacity: 1;
 }

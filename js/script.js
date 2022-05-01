@@ -95,3 +95,30 @@ function changeArray(){
 		arrState = 1;
 	}
 }
+
+function baco(){
+	const bacoWrap = document.querySelector('.js5-baco');
+	let y = document.querySelector('.js5-param');
+	let resultArr = [];
+	if(y.value){
+		for(let i=0; i<y.value; i++){
+			if(i%2==0){
+				resultArr.push("바");
+				console.log("바");
+			}
+			else{
+				resultArr.push("코");
+				console.log("코");
+			}
+		}
+		console.log(resultArr);
+		bacoWrap.textContent = resultArr.join('');
+		return resultArr;
+	}
+	else {
+		y.value = 1;
+		baco();
+	}
+}
+
+baco();
