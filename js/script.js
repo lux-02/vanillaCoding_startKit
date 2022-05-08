@@ -298,8 +298,32 @@ function changeArray5(){
 
 // JS.10 - DOM - Events
 const alert_area = document.querySelector('.js10-wrap').children[0];
-alert_area.addEventListener('click', 
-							(ev)=>{
-							if(ev.target.tagName !== "P"){
-								alert(ev.target.textContent);
-							}});
+alert_area.addEventListener('click', (ev) => {
+    if (ev.target.tagName !== 'P') {
+        alert(ev.target.textContent);
+    }
+});
+
+// JS.11 - Background Changer
+function hexGenerator() {
+    const hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+
+    let result = '#';
+
+    for (var i = 0; i < 6; i += 1) {
+        const randomIndex = Math.floor(Math.random() * hexNumbers.length);
+        result += hexNumbers[randomIndex];
+    }
+
+    return result;
+}
+
+const bgcarea = document.getElementById('bgc-area');
+const bgcbtn = document.getElementById('bgc');
+const bgcp = document.getElementById('bgcp');
+
+bgcbtn.addEventListener('click', ()=>{
+	bgcarea.style.backgroundColor = hexGenerator();
+	bgcp.textContent = hexGenerator();
+})
+

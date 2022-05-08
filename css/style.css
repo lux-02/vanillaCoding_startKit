@@ -786,3 +786,47 @@ input[type='number']::-webkit-inner-spin-button {
 	background-color: #f46932;
 	
 }
+
+
+/* js10 Area */
+.js10-wrap button {
+	background-color: inherit;
+	color: white;
+	width: 100px;
+	border: 2px dashed white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 20px 0px 0px;
+}
+
+.js10-wrap button:hover {
+	background-color: #f46932;
+	
+}
+
+
+/* js11 Area */
+.js11-wrap #bgc {
+	background-color: inherit;
+	color: white;
+	width: 200px;
+	border: 2px dashed white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.js11-wrap #bgc:hover {
+	background-color: #f46932;
+	
+}
