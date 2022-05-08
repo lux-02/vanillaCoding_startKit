@@ -1,0 +1,104 @@
+
+
+<!-- Mission 4 - 1 -->
+<a href="https://www.naver.com" class="logo">
+	<!-- a 태그의 href 속성을 이용하여 클릭시 메인 페이지로 이동하는 하이퍼링크 생성 -->
+	<!-- class 속성을 이용하여 ‘logo’ 클래스 스타일을 적용, 네이버 로고 이미지를 백그라운드 이미지로 표현 -->
+	<h1 class="blind">NAVER</h1>
+	<!-- 웹 문서의 Heading level 1이 ‘NAVER’ 라는 것을 명시 -->
+	<!-- 시각장애인을 위한 스크린 리더 접근성을 고려한 IR 기법 적용을 위해 class 속성을 이용하여 ‘blind’ 클래스 스타일을 적용 -->
+</a>
+
+
+
+<!-- 
+<div>태그: 특정 의미 없는 block 요소 태그
+<span>태그: 특정 의미 없는 inline 요소 태그 
+-->
+
+
+<!-- Mission 4 - 2 -->
+<div class="id_pw_wrap">
+    <div class="input_row" id="id_line">
+		<!-- 아이디 입력 영역 -->
+        <div class="icon_cell" id="id_cell">
+			<!-- 아이디 아이콘 영역 -->
+            <span class="icon_id">
+				<!-- 이미지 스프라이트 처리을 위해 백그라운드 이미지로 아이콘 처리 -->
+                <span class="blind">아이디</span>
+				<!-- IR기법 적용을 위한 blind 클래스 처리 -->
+            </span>
+        </div>
+        <input type="text" id="id" name="id" placeholder="아이디" title="아이디" class="input_text" maxlength="41" value=""/>
+		<!-- Input 태그를 이용하여 사용자 입력 값을 받음 -->
+		<!-- type 속성을 통해 text 형태의 입력 값을 받을 수 있도록 정의 -->
+		<!-- placeholder 속성을 통해 입력 전 "아이디" 라는 텍스트를 미리 출력 -->
+		<!-- maxlength 속성을 통해 최대 길이 41로 지정 -->
+		
+        <span role="button" class="btn_delete" id="id_clear" style="display: none;">
+			<!-- 사용자가 값을 입력하면 "display: block"으로 바뀌며 삭제 버튼 표시 -->
+            <span class="icon_delete">
+				<!-- 이미지 스프라이트 처리을 위해 백그라운드 이미지로 아이콘 처리 -->
+                <span class="blind">삭제</span>
+				<!-- IR기법 적용을 위한 blind 클래스 처리 -->
+            </span>
+        </span>
+    </div>
+	
+    <div class="input_row" id="pw_line">
+		<!-- 비밀번호 입력 영역 -->
+        <div class="icon_cell" id="pw_cell">
+			<!-- 비밀번호 아이콘 영역 -->
+            <span class="icon_pw">
+				<!-- 이미지 스프라이트 처리을 위해 백그라운드 이미지로 아이콘 처리 -->
+                <span class="blind">비밀번호</span>
+				<!-- IR기법 적용을 위한 blind 클래스 처리 -->
+            </span>
+        </div>
+        <input type="password" id="pw" name="pw" placeholder="비밀번호" title="비밀번호" class="input_text" maxlength="16"/>
+		<!-- Input 태그를 이용하여 사용자 입력 값을 받음 -->
+		<!-- type 속성을 통해 password 형태의 입력 값을 받을 수 있도록 "*", "•"로 표시 -->
+		<!-- placeholder 속성을 통해 입력 전 "비밀번호" 라는 텍스트를 미리 출력 -->
+		<!-- maxlength 속성을 통해 최대 길이 16으로 지정 -->
+        <span role="button" class="btn_delete" id="pw_clear" style="display: none;">
+			<!-- 사용자가 값을 입력하면 "display: block"으로 바뀌며 삭제 버튼 표시 -->
+            <span class="icon_delete">
+				<!-- 이미지 스프라이트 처리을 위해 백그라운드 이미지로 아이콘 처리 -->
+                <span class="blind">삭제</span>
+				<!-- IR기법 적용을 위한 blind 클래스 처리 -->
+            </span>
+        </span>
+    </div>
+</div>
+
+
+
+
+<!-- Mission 4 - 3 -->
+<div class="btn_login_wrap">
+	<!-- 로그인 버튼 영역 -->
+    <button type="submit" class="btn_login" id="log.login">
+		<!-- button 태그의 type="submit" 속성을 이용하여 버튼 클릭시 입력한 데이터를 서버로 전송 -->
+        <span class="btn_text">로그인</span>
+		<!-- 버튼 영역의 텍스트를 span 태그를 통해 "로그인"으로 표시 -->
+    </button>
+</div>
+
+
+
+
+
+
+<form action="./result.html" method="post">
+	<fieldset>
+		<legend>필수 입력 정보</legend>
+		<label for="user-name">이름: </label><input id="user-name" type="text">
+		<br>
+		<label for="user-age">나이: </label><input id="user-age" type="number">
+		<br>
+		<label for="user-gender">성별: </label>
+		<label for="user-gender-m">남</label><input name="user-gender" id="user-gender-m" type="radio">
+		<label for="user-gender-m">여</label><input name="user-gender" id="user--gender-w" type="radio">
+		<input type="submit"><input type="reset">
+	</fieldset>
+</form>

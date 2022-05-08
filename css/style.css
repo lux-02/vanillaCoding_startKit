@@ -532,7 +532,7 @@ ul li {
 /* js4 Area */
 .js4-wrap .js4-par {
 	margin-bottom: 20px;
-	width: 100%;
+	width: 500px;
 	border: 1px solid white;
 	height: 50px;
 	display: flex;
@@ -545,7 +545,7 @@ ul li {
 	margin-bottom: 20px;
 	background-color: #FEB131;
 	color: white;
-	width: 100%;
+	width: 500px;
 	border: 1px solid #FEB131;
 	height: 50px;
 	display: flex;
@@ -557,7 +557,7 @@ ul li {
 .js4-wrap .js4-btn {
 	background-color: inherit;
 	color: white;
-	width: 50%;
+	width: 300px;
 	border: 2px dashed white;
 	height: 50px;
 	display: flex;
@@ -569,7 +569,7 @@ ul li {
 }
 
 .js4-wrap .js4-btn:hover {
-	background-color: blue;
+	background-color: #FEB131;
 	
 }
 
@@ -609,7 +609,7 @@ input[type='number']::-webkit-inner-spin-button {
 /* js6 Area */
 .js6-wrap .js6-par {
 	margin-bottom: 20px;
-	width: 100%;
+	width: 500px;
 	border: 1px solid white;
 	height: 50px;
 	display: flex;
@@ -622,7 +622,7 @@ input[type='number']::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	background-color: #BF9F78;
 	color: white;
-	width: 100%;
+	width: 500px;
 	border: 1px solid #BF9F78;
 	height: 50px;
 	display: flex;
@@ -634,7 +634,7 @@ input[type='number']::-webkit-inner-spin-button {
 .js6-wrap .js6-btn {
 	background-color: inherit;
 	color: white;
-	width: 50%;
+	width: 300px;
 	border: 2px dashed white;
 	height: 50px;
 	display: flex;
@@ -646,7 +646,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .js6-wrap .js6-btn:hover {
-	background-color: blue;
+	background-color: #BF9F78;
 	
 }
 
@@ -655,7 +655,7 @@ input[type='number']::-webkit-inner-spin-button {
 /* js7 Area */
 .js7-wrap .js7-par {
 	margin-bottom: 20px;
-	width: 100%;
+	width: 500px;
 	border: 1px solid white;
 	height: 50px;
 	display: flex;
@@ -668,7 +668,7 @@ input[type='number']::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	background-color: #589957;
 	color: white;
-	width: 100%;
+	width: 500px;
 	border: 1px solid #589957;
 	height: 50px;
 	display: flex;
@@ -680,7 +680,7 @@ input[type='number']::-webkit-inner-spin-button {
 .js7-wrap .js7-btn {
 	background-color: inherit;
 	color: white;
-	width: 50%;
+	width: 300px;
 	border: 2px dashed white;
 	height: 50px;
 	display: flex;
@@ -692,7 +692,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .js7-wrap .js7-btn:hover {
-	background-color: blue;
+	background-color: #589957;
 	
 }
 
@@ -701,7 +701,7 @@ input[type='number']::-webkit-inner-spin-button {
 /* js8 Area */
 .js8-wrap .js8-par {
 	margin-bottom: 20px;
-	width: 100%;
+	width: 500px;
 	border: 1px solid white;
 	height: 50px;
 	display: flex;
@@ -714,7 +714,7 @@ input[type='number']::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	background-color: #49A4B9;
 	color: white;
-	width: 100%;
+	width: 500px;
 	border: 1px solid #49A4B9;
 	height: 50px;
 	display: flex;
@@ -726,7 +726,7 @@ input[type='number']::-webkit-inner-spin-button {
 .js8-wrap .js8-btn {
 	background-color: inherit;
 	color: white;
-	width: 50%;
+	width: 300px;
 	border: 2px dashed white;
 	height: 50px;
 	display: flex;
@@ -738,6 +738,51 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .js8-wrap .js8-btn:hover {
-	background-color: blue;
+	background-color: #49A4B9;
+	
+}
+
+
+/* js9 Area */
+.js9-wrap .js9-par {
+	margin-bottom: 20px;
+	width: 500px;
+	border: 1px solid white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js9-wrap .js9-ret {
+	margin-bottom: 20px;
+	background-color: #F46932;
+	color: white;
+	width: 500px;
+	border: 1px solid #F46932;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.js9-wrap .js9-btn {
+	background-color: inherit;
+	color: white;
+	width: 300px;
+	border: 2px dashed white;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.js9-wrap .js9-btn:hover {
+	background-color: #f46932;
 	
 }

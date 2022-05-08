@@ -244,3 +244,54 @@ function changeArray4(){
 			arrState = 1;
 	}
 }
+
+
+
+// JS.9 - Make Object
+function makeObj(arr1, arr2){
+	let arrayArea = document.querySelector('.js9-par');
+	let returnArea = document.querySelector('.js9-ret');
+	let returnObj = {};
+	let arrx = [];
+	
+	for (let prop in arr1){
+		returnObj[arr1[prop]] = arr2[prop];
+	}
+	
+	arrx.push("{");
+	for (let prop in returnObj) {
+		if(prop && arrx[1]){
+			arrx.push(", ");
+		}
+		arrx.push(prop);
+		arrx.push(": ");
+		arrx.push(returnObj[prop]);
+	}
+	arrx.push("}");
+	
+	arrayArea.textContent = arr1.toString() + " / " + arr2.toString();
+	returnArea.textContent = arrx.join('') + "입니다!";
+}
+
+const js9param = [[["A", "B", "C"], [10, 20, 30]], [["D", "E", "F", "G"], [7, 4, 6, 8]], [["Jett", "Ken"], [30, 40]]];
+makeObj(js9param[0][0], js9param[0][1]);
+
+function changeArray5(){
+	const changeArea = document.querySelector('.js9-btn');	
+	switch (arrState){
+		case 1 :
+			makeObj(js9param[1][0], js9param[1][1]);
+			changeArea.textContent = "3번 예시 보기"
+			arrState = 2;
+			break;
+		case 2 :
+			makeObj(js9param[2][0], js9param[2][1]);
+			changeArea.textContent = "1번 예시 보기"
+			arrState = 3;
+			break;
+		default :
+			makeObj(js9param[0][0], js9param[0][1]);
+			changeArea.textContent = "2번 예시 보기"
+			arrState = 1;
+	}
+}
