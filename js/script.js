@@ -270,7 +270,7 @@ function makeObj(arr1, arr2){
 	arrx.push("}");
 	
 	arrayArea.textContent = arr1.toString() + " / " + arr2.toString();
-	returnArea.textContent = arrx.join('') + "입니다!";
+	returnArea.textContent = arrx.join('') + " 입니다!";
 }
 
 const js9param = [[["A", "B", "C"], [10, 20, 30]], [["D", "E", "F", "G"], [7, 4, 6, 8]], [["Jett", "Ken"], [30, 40]]];
@@ -295,3 +295,11 @@ function changeArray5(){
 			arrState = 1;
 	}
 }
+
+// JS.10 - DOM - Events
+const alert_area = document.querySelector('.js10-wrap').children[0];
+alert_area.addEventListener('click', 
+							(ev)=>{
+							if(ev.target.tagName !== "P"){
+								alert(ev.target.textContent);
+							}});
