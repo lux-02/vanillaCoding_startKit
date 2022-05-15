@@ -1,0 +1,74 @@
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.circle {
+	border-radius: 100%;
+	background: hsl(299, 81%, 48%);
+	width: 3vw;
+	height: 3vw;
+}
+
+html, body {
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background: black;
+}
+
+header p {
+	margin-bottom: 2vw;
+}
+
+header input {
+	border: 1px solid white;
+	background: inherit;
+	border-radius: 10px;
+	padding: 1vw;
+	color: white;
+}
+
+main {
+	width: 100%;
+	height: 90%;
+	background: black;
+}
+
+main #cur {
+	margin-bottom: 3vw;
+	font-weight: bolder;
+}
+
+main .circle-wrap {
+	margin-left: 2vw;
+	margin-bottom: 2vw;
+}
+
+main .circle-wrap p {
+	margin-top: 2vw;
+}
+
+.criclediv {
+	width: 100%;
+}
+
+
+.hsltext {
+	font-size: 1.2vw;
+}

@@ -327,3 +327,6 @@ bgcbtn.addEventListener('click', ()=>{
 	bgcp.textContent = hexGenerator();
 })
 
+
+
+// JS.12 - Seven Days
