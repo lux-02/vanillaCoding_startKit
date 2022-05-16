@@ -8,6 +8,7 @@ makePalette("default");
 form.addEventListener('submit', ()=>{(removeCircle(), makePalette(inputArea.value))});
 
 function removeCircle(){
+	const circledivwrap = document.querySelector('.circledivwrap');
 	const mainArea = document.querySelector('main');
 	mainArea.removeChild(circledivwrap);
 }
@@ -18,13 +19,13 @@ function makePalette(x){
 	const mainArea = document.querySelector('main');
 	const circledivwrap = document.createElement('div');
 	mainArea.appendChild(circledivwrap);
-	circledivwrap.setAttribute('id', 'circledivwrap');
+	circledivwrap.setAttribute('class', 'circledivwrap flex flex-center');
 	
 	let inputData;
 	x == "default" ? inputData = '299 081 048' : inputData = x;
 	let id = inputData.split(' ');
 	
-	const currentHsl = document.querySelector('span');
+	const currentHsl = document.getElementById('cur');
 	currentHsl.textContent = inputData;
 	
 	//make array
@@ -47,7 +48,7 @@ function makePalette(x){
 		
 	// make Circle
 	function makeCircle(arr){
-		const circledivwrap = document.getElementById('circledivwrap');
+		const circledivwrap = document.querySelector('.circledivwrap');
 		const circlediv = document.createElement('div');
 		circledivwrap.appendChild(circlediv);
 		circlediv.setAttribute('class', 'circlediv flex flex-center flex-row');

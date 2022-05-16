@@ -8,18 +8,17 @@
 	</head>
 	<body class="flex">
 		<header class="flex flex-center">
-			<p>COLOR PALETTE RECOMMENDATIONS</p>
-			<form onsubmit="return false">
+			<p class="flex flex-center flex-row">
+				COLOR PALETTE RECOMMENDATIONS_
+				<span id="cur" class="flex flex-center flex-row">299 081 048</span>
+			</p>
+			<form onsubmit="return false" class="flex flex-center flex-row">
 				<input value="" id="input-param" type="text" placeholder="HSL : 299 081 048">
-				<input type="submit">
+				<input type="submit" class="non-visible">
 			</form>
 		</header>
 		<main class="flex flex-center">
-			<p id="cur">
-				Current HSL = <span>299 081 048</span>
-			</p>
 		</main>
-	
 	<script src="./js/cp.js"></script>
 	</body>
 </html>
